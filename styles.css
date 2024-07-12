@@ -1,0 +1,186 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3efea;
+    color: #333;
+    transition: all 0.5s ease;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #401c1c;
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f7f077;
+}
+
+section {
+    padding: 2rem;
+    transition: all 0.5s ease;
+}
+
+.round-image {
+    border-radius: 50%;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+
+.round-image:hover {
+    transform: scale(1.1);
+}
+
+.About-me,
+.Qualification,
+.Skills,
+.Projects,
+.Certifications,
+.Achievements
+{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+
+.qualification,
+.Skill,
+.Project,  
+.certification, 
+.achievement {
+    width: calc(33.33% - 1rem);
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+
+.about {
+    width: 50%;
+}
+
+.certification,
+.achievement {
+    width: 75%;
+}
+
+.contact-me
+{
+    width:90%;
+    margin:4.5rem;
+}
+
+.qualification:hover, .Skill:hover, .Project:hover, .certification:hover, .achievement:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fefbf4;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #401c1c;
+    color: #fff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover {
+    color: #f7f077;
+    transform: scale(1.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+form h2 {
+    margin: 0;
+    color: #333;
+}
+
+form label {
+    width: 100%;
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 10%;
+    background-color: #2ce466;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #aff4af;
+}
+
+@media screen and (max-width: 600px) {
+    .qualification, .Skill, .Project, .certification, .achievement, .contact-me {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .qualification, .Skill, .Project, .certification, .achievement, .contact-me {
+        width: 100%;
+    }
+}
